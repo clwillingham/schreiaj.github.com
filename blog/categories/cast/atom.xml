@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[EWCP Blog]]></title>
-  <link href="http://ewcp.org/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Cast | EWCP Blog]]></title>
+  <link href="http://ewcp.org/blog/categories/cast/atom.xml" rel="self"/>
   <link href="http://ewcp.org/"/>
   <updated>2011-11-21T01:16:00-05:00</updated>
   <id>http://ewcp.org/</id>
@@ -12,17 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hello FIRST]]></title>
-    <link href="http://ewcp.org/blog/2011/11/21/hello-first/"/>
-    <updated>2011-11-21T00:00:00-05:00</updated>
-    <id>http://ewcp.org/blog/2011/11/21/hello-first</id>
-    <content type="html"><![CDATA[<h2>Welcome to EWCP</h2>
-
-<p>First thing is first, we need to outline what EWCP is and what we do.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Inside an FRC Supplier:AndyMark]]></title>
@@ -65,42 +54,6 @@
     <link href="http://ewcp.org/blog/2011/09/18/off-season-activities/"/>
     <updated>2011-09-18T01:03:00-04:00</updated>
     <id>http://ewcp.org/blog/2011/09/18/off-season-activities</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[IRI 2011 Predictions]]></title>
-    <link href="http://ewcp.org/blog/2011/07/14/iri-2011-predictions/"/>
-    <updated>2011-07-14T01:03:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/07/14/iri-2011-predictions</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Inside 1114]]></title>
-    <link href="http://ewcp.org/blog/2011/06/28/inside-1114/"/>
-    <updated>2011-06-28T01:03:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/06/28/inside-1114</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Chairman's Chat]]></title>
-    <link href="http://ewcp.org/blog/2011/05/17/chairmans-chat/"/>
-    <updated>2011-05-17T01:02:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/05/17/chairmans-chat</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CNN Educate in America]]></title>
-    <link href="http://ewcp.org/blog/2011/05/15/cnn-educate-in-america/"/>
-    <updated>2011-05-15T01:00:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/05/15/cnn-educate-in-america</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
