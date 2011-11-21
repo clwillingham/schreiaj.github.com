@@ -4,7 +4,7 @@
   <title><![CDATA[EWCP Blog]]></title>
   <link href="http://ewcp.org/atom.xml" rel="self"/>
   <link href="http://ewcp.org/"/>
-  <updated>2011-11-21T00:30:40-05:00</updated>
+  <updated>2011-11-21T00:54:18-05:00</updated>
   <id>http://ewcp.org/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
@@ -19,6 +19,8 @@
     <updated>2011-11-21T00:00:00-05:00</updated>
     <id>http://ewcp.org/blog/2011/11/21/hello-first</id>
     <content type="html"><![CDATA[<h2>Welcome to EWCP</h2>
+
+<p>First thing is first, we need to outline what EWCP is and what we do.</p>
 ]]></content>
   </entry>
   
