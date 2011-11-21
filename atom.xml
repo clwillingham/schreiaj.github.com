@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[EWCP Blog]]></title>
+  <link href="http://ewcp.org/atom.xml" rel="self"/>
+  <link href="http://ewcp.org/"/>
+  <updated>2011-11-21T00:30:40-05:00</updated>
+  <id>http://ewcp.org/</id>
+  <author>
+    <name><![CDATA[EWCP]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello FIRST]]></title>
+    <link href="http://ewcp.org/blog/2011/11/21/hello-first/"/>
+    <updated>2011-11-21T00:00:00-05:00</updated>
+    <id>http://ewcp.org/blog/2011/11/21/hello-first</id>
+    <content type="html"><![CDATA[<h2>Welcome to EWCP</h2>
+]]></content>
+  </entry>
+  
+</feed>
