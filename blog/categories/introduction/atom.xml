@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Introduction | EWCP Blog]]></title>
+  <link href="http://schreiaj.github.com/blog/categories/introduction/atom.xml" rel="self"/>
+  <link href="http://schreiaj.github.com/"/>
+  <updated>2011-11-22T18:15:04-05:00</updated>
+  <id>http://schreiaj.github.com/</id>
+  <author>
+    <name><![CDATA[EWCP]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello FIRST]]></title>
+    <link href="http://schreiaj.github.com/blog/2011/11/21/hello-first/"/>
+    <updated>2011-11-21T00:00:00-05:00</updated>
+    <id>http://schreiaj.github.com/blog/2011/11/21/hello-first</id>
+    <content type="html"><![CDATA[<p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (11) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
+
+<p>Since then, The EWCP has grown to nearly 12 Teams from all over North America and has excelled at nearly every aspect of the FIRST Robotics Competition. Together, the EWCP Mentor team has several decades of experience with the FIRST Robotics Competion.</p>
+
+<p>During the Competition Season in 2011, EWCP decided to branch out into the world of podcasts with it's EWCPcast. EWCPcast turned out to be a huge hit, with some very experienced mentors and competitors sharing some of their secrets to success. EWCPcast has covered topics including The Chairmans Award, FIRST Suppliers, and Scouting and have also done Event Predictions for both IRI and Championship.</p>
+
+<p>Currently, the EWCP is not accepting new Member Teams as we are ramping up for the 2012 Season, though we'd be more than happy to help you should you need it. We can offer help with Programming, Mechanical Systems, Awards Submissions and pretty much anything else you come up with.</p>
+
+<p>-The EWCP.</p>
+]]></content>
+  </entry>
+  
+</feed>

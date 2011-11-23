@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cast | EWCP Blog]]></title>
-  <link href="http://ewcp.org/blog/categories/cast/atom.xml" rel="self"/>
-  <link href="http://ewcp.org/"/>
-  <updated>2011-11-21T01:16:00-05:00</updated>
-  <id>http://ewcp.org/</id>
+  <link href="http://schreiaj.github.com/blog/categories/cast/atom.xml" rel="self"/>
+  <link href="http://schreiaj.github.com/"/>
+  <updated>2011-11-22T18:15:04-05:00</updated>
+  <id>http://schreiaj.github.com/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
     
@@ -15,45 +15,45 @@
   
   <entry>
     <title type="html"><![CDATA[Inside an FRC Supplier:AndyMark]]></title>
-    <link href="http://ewcp.org/blog/2011/11/13/inside-an-frc-supplier-andymark/"/>
+    <link href="http://schreiaj.github.com/blog/2011/11/13/inside-an-frc-supplier-andymark/"/>
     <updated>2011-11-13T01:04:00-05:00</updated>
-    <id>http://ewcp.org/blog/2011/11/13/inside-an-frc-supplier-andymark</id>
+    <id>http://schreiaj.github.com/blog/2011/11/13/inside-an-frc-supplier-andymark</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Introduction to Scouting]]></title>
-    <link href="http://ewcp.org/blog/2011/10/30/introduction-to-scouting/"/>
+    <link href="http://schreiaj.github.com/blog/2011/10/30/introduction-to-scouting/"/>
     <updated>2011-10-30T01:04:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/10/30/introduction-to-scouting</id>
+    <id>http://schreiaj.github.com/blog/2011/10/30/introduction-to-scouting</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Team Sustainability]]></title>
-    <link href="http://ewcp.org/blog/2011/10/16/team-sustainability/"/>
+    <link href="http://schreiaj.github.com/blog/2011/10/16/team-sustainability/"/>
     <updated>2011-10-16T01:04:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/10/16/team-sustainability</id>
+    <id>http://schreiaj.github.com/blog/2011/10/16/team-sustainability</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[2011 Event Registration Part 1]]></title>
-    <link href="http://ewcp.org/blog/2011/10/02/2011-event-registration-part-1/"/>
+    <link href="http://schreiaj.github.com/blog/2011/10/02/2011-event-registration-part-1/"/>
     <updated>2011-10-02T01:03:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/10/02/2011-event-registration-part-1</id>
+    <id>http://schreiaj.github.com/blog/2011/10/02/2011-event-registration-part-1</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Off Season Activities]]></title>
-    <link href="http://ewcp.org/blog/2011/09/18/off-season-activities/"/>
+    <link href="http://schreiaj.github.com/blog/2011/09/18/off-season-activities/"/>
     <updated>2011-09-18T01:03:00-04:00</updated>
-    <id>http://ewcp.org/blog/2011/09/18/off-season-activities</id>
+    <id>http://schreiaj.github.com/blog/2011/09/18/off-season-activities</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
