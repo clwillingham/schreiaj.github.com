@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[EWCP Blog]]></title>
-  <link href="http://schreiaj.github.com/atom.xml" rel="self"/>
-  <link href="http://schreiaj.github.com/"/>
-  <updated>2011-11-22T18:15:04-05:00</updated>
-  <id>http://schreiaj.github.com/</id>
+  <link href="ewcp.org/atom.xml" rel="self"/>
+  <link href="ewcp.org/"/>
+  <updated>2011-11-23T17:10:52-05:00</updated>
+  <id>ewcp.org/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
     
@@ -15,16 +15,16 @@
   
   <entry>
     <title type="html"><![CDATA[Hello FIRST]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/11/21/hello-first/"/>
+    <link href="ewcp.org/blog/2011/11/21/hello-first/"/>
     <updated>2011-11-21T00:00:00-05:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/11/21/hello-first</id>
+    <id>ewcp.org/blog/2011/11/21/hello-first</id>
     <content type="html"><![CDATA[<p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (11) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
 
 <p>Since then, The EWCP has grown to nearly 12 Teams from all over North America and has excelled at nearly every aspect of the FIRST Robotics Competition. Together, the EWCP Mentor team has several decades of experience with the FIRST Robotics Competion.</p>
 
 <p>During the Competition Season in 2011, EWCP decided to branch out into the world of podcasts with it&#8217;s EWCPcast. EWCPcast turned out to be a huge hit, with some very experienced mentors and competitors sharing some of their secrets to success. EWCPcast has covered topics including The Chairmans Award, FIRST Suppliers, and Scouting and have also done Event Predictions for both IRI and Championship.</p>
 
-<p>Currently, the EWCP is not accepting new Member Teams as we are ramping up for the 2012 Season, though we&#8217;d be more than happy to help you should you need it. We can offer help with Programming, Mechanical Systems, Awards Submissions and pretty much anything else you come up with.</p>
+<p>We&#8217;d be more than happy to help you should you need it. We can offer help with Programming, Mechanical Systems, Awards Submissions and pretty much anything else you come up with.</p>
 
 <p>-The EWCP.</p>
 ]]></content>
@@ -32,81 +32,81 @@
   
   <entry>
     <title type="html"><![CDATA[Inside an FRC Supplier:AndyMark]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/11/13/inside-an-frc-supplier-andymark/"/>
+    <link href="ewcp.org/blog/2011/11/13/inside-an-frc-supplier-andymark/"/>
     <updated>2011-11-13T01:04:00-05:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/11/13/inside-an-frc-supplier-andymark</id>
+    <id>ewcp.org/blog/2011/11/13/inside-an-frc-supplier-andymark</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Introduction to Scouting]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/10/30/introduction-to-scouting/"/>
+    <link href="ewcp.org/blog/2011/10/30/introduction-to-scouting/"/>
     <updated>2011-10-30T01:04:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/10/30/introduction-to-scouting</id>
+    <id>ewcp.org/blog/2011/10/30/introduction-to-scouting</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Team Sustainability]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/10/16/team-sustainability/"/>
+    <link href="ewcp.org/blog/2011/10/16/team-sustainability/"/>
     <updated>2011-10-16T01:04:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/10/16/team-sustainability</id>
+    <id>ewcp.org/blog/2011/10/16/team-sustainability</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[2011 Event Registration Part 1]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/10/02/2011-event-registration-part-1/"/>
+    <link href="ewcp.org/blog/2011/10/02/2011-event-registration-part-1/"/>
     <updated>2011-10-02T01:03:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/10/02/2011-event-registration-part-1</id>
+    <id>ewcp.org/blog/2011/10/02/2011-event-registration-part-1</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Off Season Activities]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/09/18/off-season-activities/"/>
+    <link href="ewcp.org/blog/2011/09/18/off-season-activities/"/>
     <updated>2011-09-18T01:03:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/09/18/off-season-activities</id>
+    <id>ewcp.org/blog/2011/09/18/off-season-activities</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[IRI 2011 Predictions]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/07/14/iri-2011-predictions/"/>
+    <link href="ewcp.org/blog/2011/07/14/iri-2011-predictions/"/>
     <updated>2011-07-14T01:03:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/07/14/iri-2011-predictions</id>
+    <id>ewcp.org/blog/2011/07/14/iri-2011-predictions</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Inside 1114]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/06/28/inside-1114/"/>
+    <link href="ewcp.org/blog/2011/06/28/inside-1114/"/>
     <updated>2011-06-28T01:03:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/06/28/inside-1114</id>
+    <id>ewcp.org/blog/2011/06/28/inside-1114</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Chairman's Chat]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/05/17/chairmans-chat/"/>
+    <link href="ewcp.org/blog/2011/05/17/chairmans-chat/"/>
     <updated>2011-05-17T01:02:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/05/17/chairmans-chat</id>
+    <id>ewcp.org/blog/2011/05/17/chairmans-chat</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[CNN Educate in America]]></title>
-    <link href="http://schreiaj.github.com/blog/2011/05/15/cnn-educate-in-america/"/>
+    <link href="ewcp.org/blog/2011/05/15/cnn-educate-in-america/"/>
     <updated>2011-05-15T01:00:00-04:00</updated>
-    <id>http://schreiaj.github.com/blog/2011/05/15/cnn-educate-in-america</id>
+    <id>ewcp.org/blog/2011/05/15/cnn-educate-in-america</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
