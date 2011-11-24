@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Sample In Browser Calculator - EWCP Blog</title>
+  <title>Single Speed Drive Train - EWCP Blog</title>
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="Sample in Browser Calculator function setUpTangle () { var element = document.getElementById("example"); var tangle = new Tangle(element, { &hellip;">
+  <meta name="description" content="Single Speed Drive Train function setUpTangle () { var element = document.getElementById("singlespeed"); var tangle = new Tangle(element, { &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,7 +64,7 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Sample in Browser Calculator</h1>
+    <h1 class="entry-title">Single Speed Drive Train</h1>
     
   </header>
   
@@ -91,15 +91,17 @@
 
         function setUpTangle () {
 
-            var element = document.getElementById("example");
+            var element = document.getElementById("singlespeed");
 
             var tangle = new Tangle(element, {
                 initialize: function () {
-                    this.cookies = 4;
-                    this.caloriesPerCookie = 50;
+                    this.free_speed = 5000;
+                    this.applied_voltage = 12.0;
+                    this.spec_voltage = 12.0;
+                    this.stall_torque = 2.22;
                 },
                 update: function () {
-                    this.calories = this.cookies * this.caloriesPerCookie;
+                    this.speed = this.free_speed*.8;
                 }
             });
         }
@@ -108,15 +110,13 @@
 
 <p><body onload="setUpTangle();"></p>
 
-<p>This is a simple reactive document.</p>
+<div id="singlespeed">
+Your motor has a free speed of <span data-var="free_speed" class="TKNumberField" data-min="1" data-max="100000"> revolutions per minute (rpm)</span>. 
+<hr />
+This motor is running at <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> and the specifications were based off of <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span>. The stall torque is <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span>
 
 
-
-
-<p id="example">
-When you eat <span data-var="cookies" class="TKAdjustableNumber" data-min="2" data-max="100"> cookies</span>, you
-will consume <span data-var="calories"></span> calories.
-</p>
+</div>
 
 
 <p></body></p>
