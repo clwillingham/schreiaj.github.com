@@ -71,7 +71,8 @@
   <script type="text/javascript" src="../../javascripts/libs/tangle/Tangle.js"></script>
 
 
-<p><link rel="stylesheet" href="../../javascripts/libs/tangle/TangleKit/TangleKit.css" type="text/css"></p>
+<p><link rel="stylesheet" href="../../javascripts/libs/tangle/TangleKit/TangleKit.css" type="text/css">
+<link rel="stylesheet" href="../../javascripts/libs/tangle/TangleKit/tooltip.css" type="text/css"></p>
 
 <script type="text/javascript" src="../../javascripts/libs/tangle/TangleKit/mootools.js"></script>
 
@@ -99,9 +100,12 @@
                     this.applied_voltage = 12.0;
                     this.spec_voltage = 12.0;
                     this.stall_torque = 2.22;
+                    this.stall_current = 107;
+                    this.free_current = 2.3;
                 },
                 update: function () {
-                    this.speed = this.free_speed*.8;
+                    this.actual_speed = this.free_speed*(this.applied_voltage/this.spec_voltage);
+                    console.log(JSON.stringify(this));
                 }
             });
         }
@@ -110,10 +114,15 @@
 
 <p><body onload="setUpTangle();"></p>
 
-<div id="singlespeed">
-Your motor has a free speed of <span data-var="free_speed" class="TKNumberField" data-min="1" data-max="100000"> revolutions per minute (rpm)</span>. 
+<h2>How to use:</h2>
+
+<p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simple click and drag any of the blue numbers to adjust them. Enjoy!</p>
+
 <hr />
-This motor is running at <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> and the specifications were based off of <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span>. The stall torque is <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span>
+
+
+<div id="singlespeed">
+I have a motor that runs at <span data-var="free_speed" class="TKAdjustableNumber" data-min="1" data-max="20000" data-step="50"> revolutions per minute (rpm)</span> at <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span>. It is currently running at <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> which means that the motor is actually running at <span title="This is a function of speed*(applied voltage/specified voltage)." class="equation" data-var="actual_speed" data-format="%.0f"> rpm </span> The spec sheet says that the stall torque is <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span> and the motor will draw <span data-var="stall_current" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> amps</span>. With no load on the motor it will draw <span data-var="free_current" class="TKAdjustableNumber" data-min="0" data-max="50" data-format="%.2f" data-step=".1"> amps</span>.
 
 
 </div>
