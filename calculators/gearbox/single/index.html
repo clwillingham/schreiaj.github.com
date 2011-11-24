@@ -154,7 +154,14 @@
                     this.motor_load = (this.adjusted_torque*this.reduction)/this.motors;
                     this.motor_current = (((this.stall_current_a/this.motors)-(this.free_current_a/this.motors))/(this.stall_torque_a/this.motors)*this.motor_load)+(this.free_current_a/this.motors)
                     this.total_current = this.motor_current*this.motors*this.gearboxes;
-
+                    if((this.wheel_stall/(4.44822161526*this.wheel_radius_m)*2) > this.pushing_force)
+                        {
+                            this.actual_pushing_force = this.pushing_force;   
+                        }
+                    else
+                        {
+                            this.actual_pushing_force = (this.wheel_stall/(4.44822161526*this.wheel_radius_m)*2)
+                        }
 
                 }
             });
