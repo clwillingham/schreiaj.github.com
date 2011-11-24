@@ -102,6 +102,15 @@
                     this.stall_torque = 2.22;
                     this.stall_current = 107;
                     this.free_current = 2.3;
+                    this.weight = 148;
+                    this.driven_wheel_weight = 100;
+                    this.wheel_size = 6;
+                    this.coeff_friction = 1.2;
+                    this.efficiency = 90;
+                    this.speed_loss = 81;
+                    this.motors = 2;
+                    this.gearboxes = 2;
+                    
                 },
                 update: function () {
                     this.actual_speed = this.free_speed*(this.applied_voltage/this.spec_voltage);
@@ -116,13 +125,26 @@
 
 <h2>How to use:</h2>
 
-<p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simple click and drag any of the blue numbers to adjust them. Enjoy!</p>
+<p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simply click and drag any of the blue numbers to adjust them. Enjoy!</p>
+
+<p>Special thanks to JVN for the spreadsheet from which this is drawn, without him a lot of us would still be confused by this. Also, Chris Picone for his skills at technical writing without which this would be significantly harder to read.</p>
 
 <hr />
 
 
 <div id="singlespeed">
-I have a motor that runs at <span data-var="free_speed" class="TKAdjustableNumber" data-min="1" data-max="20000" data-step="50"> revolutions per minute (rpm)</span> at <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span>. It is currently running at <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> which means that the motor is actually running at <span title="This is a function of speed*(applied voltage/specified voltage)." class="equation" data-var="actual_speed" data-format="%.0f"> rpm </span> The spec sheet says that the stall torque is <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span> and the motor will draw <span data-var="stall_current" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> amps</span>. With no load on the motor it will draw <span data-var="free_current" class="TKAdjustableNumber" data-min="0" data-max="50" data-format="%.2f" data-step=".1"> amps</span>.
+I have a <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> motor specified to run at  <span data-var="free_speed" class="TKAdjustableNumber" data-min="1" data-max="20000" data-step="50"> revolutions per minute </span>, with a stall torque of <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span> and a stall current of <span data-var="stall_current" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> amps</span>. The no load current is <span data-var="free_current" class="TKAdjustableNumber" data-min="0" data-max="50" data-format="%.2f" data-step=".1"> amps</span>. I am applying <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> to the motor.
+<br />
+
+My robot&#8217;s fully loaded weight is <span data-var="weight" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> pounds</span> and <span data-var="driven_wheel_weight" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1"> %</span> of the weight is being supported by the drive wheels. My wheels have a diameter of <span data-var="wheel_size" class="TKAdjustableNumber" data-min=".1" data-max="24" data-format="%.1f" data-step=".1"> inches</span> have a coefficient of static friction of <span data-var="coeff_friction" class="TKAdjustableNumber" data-min="0" data-max="5" data-format="%.2f" data-step=".01"></span>.
+
+<br />
+
+The robot has <span data-var="motors" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> motors per gearbox</span> and <span data-var="gearboxes" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> gearboxes</span> in the drivetrain. I am assuming <span data-var="efficiency" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1"> %</span> efficiency and <span data-var="speed_loss" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1"> %</span> speed loss
+
+
+
+
 
 
 </div>
