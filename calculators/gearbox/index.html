@@ -97,7 +97,7 @@
 
             var tangle = new Tangle(element, {
                 initialize: function () {
-                    this.free_speed = 5000;
+                    this.free_speed = 5500;
                     this.applied_voltage = 12.0;
                     this.spec_voltage = 12.0;
                     this.stall_torque = 2.22;
@@ -105,8 +105,8 @@
                     this.free_current = 2.3;
                     this.weight = 148;
                     this.driven_wheel_weight = 100;
-                    this.wheel_size = 6;
-                    this.coeff_friction = 1.2;
+                    this.wheel_size = 4;
+                    this.coeff_friction = 1.4;
                     this.efficiency = 90;
                     this.speed_loss = 81;
                     this.motors = 2;
@@ -123,11 +123,10 @@
                     this.driven_4 = 1;
                     this.drive_5 = 1;
                     this.driven_5 = 1;
+                    // Reduction Section
 
                 },
                 update: function () {
-                    this.actual_speed = this.free_speed*(this.applied_voltage/this.spec_voltage);
-
                     this.set_1 = this.drive_1/this.driven_1;
                     this.set_2 = this.drive_2/this.driven_2;
                     this.set_3 = this.drive_3/this.driven_3;
@@ -135,6 +134,28 @@
                     this.set_5 = this.drive_5/this.driven_5;
                     this.reduction = this.set_1*this.set_2*this.set_3*this.set_4*this.set_5
                     this.ratio = 1/this.reduction;
+
+                    this.wheel_radius_m = this.wheel_size*.0254/2; // Convert to meters and radius
+                    this.wheel_circum_m = this.wheel_radius_m*2*Math.PI;
+                    this.free_speed_a = this.free_speed*(this.applied_voltage/this.spec_voltage);
+                    this.stall_torque_a = this.stall_torque*this.motors*(this.applied_voltage/this.spec_voltage);
+                    this.stall_current_a = this.stall_current*this.motors*(this.applied_voltage/this.spec_voltage);
+                    this.free_current_a = this.free_current*this.motors*(this.applied_voltage/this.spec_voltage);
+
+                    this.pushing_force = this.coeff_friction*this.driven_wheel_weight/100*this.weight;
+                    this.slip_per_box = this.pushing_force/this.gearboxes;
+                    this.slip_per_box_n = this.slip_per_box * 4.44822161526;
+                    this.req_gearbox_torque = this.slip_per_box_n*this.wheel_radius_m;
+                    this.adjusted_torque = this.req_gearbox_torque/(this.efficiency/100);
+
+                    this.wheel_rpm = this.free_speed_a*this.reduction*this.speed_loss/100;
+                    this.fps = this.wheel_rpm*this.wheel_circum_m/(.3048*60)
+                    this.wheel_stall = this.stall_torque_a/this.reduction*this.efficiency/100
+                    this.motor_load = (this.adjusted_torque*this.reduction)/this.motors;
+                    this.motor_current = (((this.stall_current_a/this.motors)-(this.free_current_a/this.motors))/(this.stall_torque_a/this.motors)*this.motor_load)+(this.free_current_a/this.motors)
+                    this.total_current = this.motor_current*this.motors*this.gearboxes;
+
+
                 }
             });
         }
@@ -163,7 +184,7 @@ My robot&#8217;s fully loaded weight is <span data-var="weight" class="TKAdjusta
 <br />
 <br />
 
-The robot has <span data-var="motors" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> motors per gearbox</span> and <span data-var="gearboxes" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> gearboxes</span> in the drivetrain. I am assuming <span data-var="efficiency" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1"> %</span> efficiency and <span data-var="speed_loss" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1"> %</span> speed loss
+The robot has <span data-var="motors" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> motors per gearbox</span> and <span data-var="gearboxes" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> gearboxes</span> in the drivetrain. I am assuming <span data-var="efficiency" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1">%</span> efficiency and <span data-var="speed_loss" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1">%</span> speed loss
 
 <br />
 <br />
@@ -202,11 +223,14 @@ The robot has <span data-var="motors" class="TKAdjustableNumber" data-min="0" da
         <td><span data-var="reduction" data-format="%.3f"></span></td>
         <td><span data-var="ratio" data-format="%.0f">:1</span></td>
     </tr>
-
-
 </table>
+<br />
 
+This means my robot will be moving at <span data-var="fps" data-format="%.2f"> feet per second</span> with a wheel speed of <span data-var="wheel_rpm" data-format="%.2f"> rpm</span>. The wheels have a stall torque of <span data-var="wheel_stall" data-format="%.2f"> Newton meters</span> which translates into a max pushing force of <span data-var="pushing_force" data-format="%.2f"> lbs</span>.
 
+<br />
+<br />
+If it were to drive into a wall the motors would have a load of <span data-var="motor_load" data-format="%.2f"> Newton meters</span> and drawing <span data-var="motor_current" data-format="%.2f"> amps</span>. Overall, this drivetrain would draw <span data-var="total_current" data-format="%.2f"> amps</span>.
 
 </div>
 
