@@ -1,0 +1,39 @@
+.tooltip {
+	display:none;
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+
+table {
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+th {
+	padding: 0 0.5em;
+	text-align: center;
+	font-weight:bold;	
+	}
+
+tr.yellow td {
+	border-top: 1px solid #FB7A31;
+	border-bottom: 1px solid #FB7A31;
+	background: #FFC;
+	}
+
+td {
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	padding: 0 0.5em;
+	}
+
+td+td {
+	border-left: 1px solid #CCC;
+	text-align: center;
+	}
