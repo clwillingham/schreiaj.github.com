@@ -37,3 +37,15 @@ td+td {
 	border-left: 1px solid #CCC;
 	text-align: center;
 	}
+
+.input
+{
+	width:30%;
+	margin-border-left: 10px;
+}
+
+.left_align
+{
+	text-align:left;
+	margin-left:0px;
+}

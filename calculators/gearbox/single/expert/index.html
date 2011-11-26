@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Single Speed Drive Train - EWCP Blog</title>
+  <title>expert - EWCP Blog</title>
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="Single Speed Drive Train function setUpTangle () { var element = document.getElementById("singlespeed"); var tangle = new Tangle(element, { &hellip;">
+  <meta name="description" content="Expert Nov 24th, 2011 function setUpTangle () { var element = document.getElementById("singlespeed"); var tangle = new Tangle(element, { initialize &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="ewcp.org/calculators/gearbox/single">
+  <link rel="canonical" href="ewcp.org/calculators/gearbox/single/expert">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,31 +71,23 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Single Speed Drive Train</h1>
-    
+    <h1 class="entry-title">Expert</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-24T20:52:00-05:00" pubdate data-updated="true">Nov 24<span>th</span>, 2011</time></p>
   </header>
   
-  <script type="text/javascript" src="../../../javascripts/libs/tangle/Tangle.js"></script>
-
-
-<p><link rel="stylesheet" href="../../../javascripts/libs/tangle/TangleKit/TangleKit.css" type="text/css">
-<link rel="stylesheet" href="../../../javascripts/libs/tangle/TangleKit/calculator.css" type="text/css"></p>
-
-<script type="text/javascript" src="../../../javascripts/libs/tangle/TangleKit/mootools.js"></script>
-
-
-<script type="text/javascript" src="../../../javascripts/libs/tangle/TangleKit/sprintf.js"></script>
-
-
-<script type="text/javascript" src="../../../javascripts/libs/tangle/TangleKit/BVTouchable.js"></script>
-
-
-<script type="text/javascript" src="../../../javascripts/libs/tangle/TangleKit/TangleKit.js"></script>
-
-
-
-
-<script type="text/javascript">
+  <script type="text/javascript">
 
         function setUpTangle () {
 
@@ -177,12 +169,6 @@
 
 <p><body onload="setUpTangle();"></p>
 
-<h2>How to use:</h2>
-
-<p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simply click and drag any of the blue numbers to adjust them. Enjoy!</p>
-
-<p>Special thanks to JVN for the spreadsheet from which this is drawn, without him a lot of us would still be confused by this. Also, Chris Picone for his skills at technical writing without which this would be significantly harder to read.</p>
-
 <hr />
 
 
@@ -199,7 +185,14 @@ My robot&#8217;s fully loaded weight is <span data-var="weight" class="TKAdjusta
 
 The robot has <span data-var="motors" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> motors per gearbox</span> and <span data-var="gearboxes" class="TKAdjustableNumber" data-min="0" data-max="15" data-format="%.0f" data-step="1"> gearboxes</span> in the drivetrain. I am assuming <span data-var="efficiency" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1">%</span> efficiency and <span data-var="speed_loss" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.0f" data-step="1">%</span> speed loss
 
-<br />
+
+<table class="input">
+    <tr>
+        <td class="left">Free Speed</td><td><span data-var="free_speed" class="TKNumberField" data-min="1" data-max="20000" data-step="50"> rpm</span></td>
+    </tr>
+    <tr>
+        <td>Stall Torque</td><td><span data-var="stall_torque" class="TKNumberField" data-min="1" data-max="20000" data-step="50"> N*m </span></td>
+    </tr>
 <br />
 
 <table >
