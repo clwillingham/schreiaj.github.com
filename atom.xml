@@ -4,7 +4,7 @@
   <title><![CDATA[EWCP Blog]]></title>
   <link href="ewcp.org/atom.xml" rel="self"/>
   <link href="ewcp.org/"/>
-  <updated>2011-11-26T22:21:05-05:00</updated>
+  <updated>2011-11-28T21:30:32-05:00</updated>
   <id>ewcp.org/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Drivetrain Design and Analysis]]></title>
+    <link href="ewcp.org/blog/2011/11/28/drivetrain-design-and-analysis/"/>
+    <updated>2011-11-28T21:29:00-05:00</updated>
+    <id>ewcp.org/blog/2011/11/28/drivetrain-design-and-analysis</id>
+    <content type="html"><![CDATA[<p><a href="http://recordings.talkshoe.com/TC-98466/TS-563546.mp3">Drivetrain Design and Analysis</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello FIRST]]></title>
