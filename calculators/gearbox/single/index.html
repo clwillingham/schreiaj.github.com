@@ -9,7 +9,7 @@
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="Single Speed Drive Train function setUpTangle () { var element = document.getElementById("singlespeed"); var tangle = new Tangle(element, { &hellip;">
+  <meta name="description" content="Single Speed Drive Train function initialize () { var element = document.getElementById("singlespeed"); tangle = new Tangle(element, { initialize: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -36,6 +36,13 @@
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/sprintf.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/BVTouchable.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/TangleKit.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+</script>	
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27304441-1']);
@@ -50,7 +57,7 @@
 
 </head>
 
-<body   >
+<body    onload="initialize()">
   <header role="banner"><hgroup>
   <a href="/"><h1>EWCP Blog</h1></a>
   
@@ -107,11 +114,11 @@
 
 <script type="text/javascript">
 
-        function setUpTangle () {
+        function initialize () {
 
             var element = document.getElementById("singlespeed");
 
-            var tangle = new Tangle(element, {
+            tangle = new Tangle(element, {
                 initialize: function () {
                     this.free_speed = 5500;
                     this.applied_voltage = 12.0;
@@ -185,13 +192,14 @@
 </script>
 
 
-<p><body onload="setUpTangle();"></p>
+<p><span class="no_print"></p>
 
 <h2>How to use:</h2>
 
 <p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simply click and drag any of the blue numbers to adjust them. Enjoy!</p>
 
-<p>Special thanks to John Vielkind-Neun for the spreadsheet from which this is drawn, without him a lot of us would still be confused by this. Also, Chris Picone for his skills at technical writing without which this would be significantly harder to read.</p>
+<p>Special thanks to John Vielkind-Neun for the spreadsheet from which this is drawn, without him a lot of us would still be confused by this. Also, Chris Picone for his skills at technical writing without which this would be significantly harder to read.
+</span></p>
 
 <hr />
 
@@ -258,7 +266,7 @@ If it were to drive into a wall the motors would have a load of <span data-var="
 </div>
 
 
-<p></body></p>
+
 
   
 </article>
@@ -270,6 +278,10 @@ If it were to drive into a wall the motors would have a load of <span data-var="
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/12/06/2010-scoring-analysis/">2010 Scoring Analysis</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2011/11/28/drivetrain-design-and-analysis/">Drivetrain Design and Analysis</a>
@@ -285,10 +297,6 @@ If it were to drive into a wall the motors would have a load of <span data-var="
     
       <li class="post">
         <a href="/blog/2011/10/30/introduction-to-scouting/">Introduction to Scouting</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/16/team-sustainability/">Team Sustainability</a>
       </li>
     
   </ul>

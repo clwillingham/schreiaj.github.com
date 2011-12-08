@@ -9,7 +9,7 @@
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (11) and Ranjit &hellip;">
+  <meta name="description" content="The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (formerly 11, now a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -36,6 +36,13 @@
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/sprintf.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/BVTouchable.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/TangleKit.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+</script>	
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27304441-1']);
@@ -50,7 +57,7 @@
 
 </head>
 
-<body   >
+<body    onload="initialize()">
   <header role="banner"><hgroup>
   <a href="/"><h1>EWCP Blog</h1></a>
   
@@ -105,7 +112,7 @@
   </header>
 
 
-<div class="entry-content"><p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (11) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
+<div class="entry-content"><p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (formerly 11, now a mentor on 3929) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
 
 <p>Since then, The EWCP has grown to nearly 12 Teams from all over North America and has excelled at nearly every aspect of the FIRST Robotics Competition. Together, the EWCP Mentor team has several decades of experience with the FIRST Robotics Competion.</p>
 
@@ -177,6 +184,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2011/12/06/2010-scoring-analysis/">2010 Scoring Analysis</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2011/11/28/drivetrain-design-and-analysis/">Drivetrain Design and Analysis</a>
       </li>
     
@@ -190,10 +201,6 @@
     
       <li class="post">
         <a href="/blog/2011/10/30/introduction-to-scouting/">Introduction to Scouting</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/16/team-sustainability/">Team Sustainability</a>
       </li>
     
   </ul>

@@ -37,6 +37,13 @@
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/sprintf.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/BVTouchable.js"></script>
 <script type="text/javascript" src="/javascripts/libs/tangle/TangleKit/TangleKit.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+</script>	
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27304441-1']);
@@ -51,7 +58,7 @@
 
 </head>
 
-<body   >
+<body    onload="initialize()">
   <header role="banner"><hgroup>
   <a href="/"><h1>EWCP Blog</h1></a>
   
@@ -168,6 +175,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2011/12/06/2010-scoring-analysis/">2010 Scoring Analysis</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2011/11/28/drivetrain-design-and-analysis/">Drivetrain Design and Analysis</a>
       </li>
     
@@ -181,10 +192,6 @@
     
       <li class="post">
         <a href="/blog/2011/10/30/introduction-to-scouting/">Introduction to Scouting</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/16/team-sustainability/">Team Sustainability</a>
       </li>
     
   </ul>

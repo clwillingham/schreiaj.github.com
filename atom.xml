@@ -4,7 +4,7 @@
   <title><![CDATA[EWCP Blog]]></title>
   <link href="ewcp.org/atom.xml" rel="self"/>
   <link href="ewcp.org/"/>
-  <updated>2011-11-28T21:30:32-05:00</updated>
+  <updated>2011-12-08T00:42:40-05:00</updated>
   <id>ewcp.org/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
@@ -12,6 +12,168 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[2010 Scoring Analysis]]></title>
+    <link href="ewcp.org/blog/2011/12/06/2010-scoring-analysis/"/>
+    <updated>2011-12-06T20:59:00-05:00</updated>
+    <id>ewcp.org/blog/2011/12/06/2010-scoring-analysis</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>This summer when I was an intern in the “real world” I found that Boeing went to great lengths to use
+data from old programs to create baselines for new programs. With the advent of the FRC field twitter
+feed, there are mountains of data available, but not a whole lot of public analysis of it done. Many of
+the results of this are common sense – but I think it is worthwhile to see the analysis bear out the
+general accepted rule of thumb.</p>
+
+<p>This analysis uses data mined from the 2010 FRCFMS twitter feed. I got my dataset from Andrew
+Schreiber. After eliminating elimination matches and what appeared to be test cases, I have data from
+3615 matches played over the course of the season.</p>
+
+<h3>Points &amp;&amp; Penalties</h3>
+
+<p><img src="../../assets/blog_images/FRCStrategy2010/penalized_unpenalized.jpg" alt="Penalized/Unpenalized Scores " /></p>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Mean</th>
+        <th>Standard Deviation</th>
+        <th>Min</th>
+        <th>First Quartile</th>
+        <th>Median</th>
+        <th>Third Quartile</th>
+        <th>Max</th>
+    </tr>
+    <tr>
+        <td>Alliance Scores (witd penalties)</td>
+        <td>4.17</td>
+        <td>3.58</td>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td>6</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Alliance Scores (excluding penalties)</td>
+        <td>4.43</td>
+        <td>3.54</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>32</td>
+    </tr>
+</table>
+
+
+<p>The average robot scored about 1.4 points per match after penalties. It is interesting to note in
+retrospect that hanging and not acquiring any penalty flags would result in a statistically above average
+robot. For the record, hanging occurred in 30.5% of matches in this dataset. It is interesting to see the
+distribution in the first figure, and the clear skew to zero points as a result of penalties.</p>
+
+<p>Avoiding penalties is always a good thing, and avoiding them is something every team tries for. We can
+see that they clearly bias the score, but in 2010 what was their effect? It turns out that in 6% of
+matches penalties were the difference between a win and a loss, and in 10.8% of matches they turned
+what would have been a win into a tie.</p>
+
+<h3>Winning and Losing Alliance Scores</h3>
+
+<p><img src="../../assets/blog_images/FRCStrategy2010/winning_losing_no_penalties.jpg" alt="Penalized/Unpenalized Scores " /></p>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Mean</th>
+        <th>Standard Deviation</th>
+        <th>Min</th>
+        <th>First Quartile</th>
+        <th>Median</th>
+        <th>Third Quartile</th>
+        <th>Max</th>
+    </tr>
+    <tr>
+        <td>Winning Alliance Score</td>
+        <td>5.86</td>
+        <td>3.7</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>8</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Losing Alliance Score</td>
+        <td>4.43</td>
+        <td>2.47</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+        <td>18</td>
+    </tr>
+</table>
+
+
+<p><img src="../../assets/blog_images/FRCStrategy2010/winning_losing.jpg" alt="Penalized/Unpenalized Scores " /></p>
+
+<p>By glancing between the penalized figures and the unpenalized ones, a trend quickly becomes clear.
+Losing alliances (especially low scoring ones) are especially penalty prone. While penalties shift the
+mean by .3 points for losing alliances, it shifts .15 points for winning ones. However it is especially
+telling that the 1st quartile shifts from 0 points to 2 points, meaning that many alliances scoring between
+0 and 2 points lost those points in penalties. Plotting penalized losing scores and unpenalized losing
+scores on the same plot drives the point home.</p>
+
+<p><img src="../../assets/blog_images/FRCStrategy2010/losing_penalties.jpg" alt="Penalized/Unpenalized Scores " /></p>
+
+<h3>End Game</h3>
+
+<p>It is worth noting that 2010 was an especially low scoring FRC game. However, if we consider that the
+GDC tries to have an end task worth about as many points percentage-wise in every FRC game these
+numbers could give you some guidance. Remember that 2 points were awarded per robot hanging and
+3 per robot that was suspended. This doesn’t consider the opportunity cost of hanging vs. doing
+something else, but when a hanging robot on the losing alliance could’ve changed the outcome of the
+match 30% of the time, it seems the end game was significant, despite being worth only 2 balls.</p>
+
+<table>
+    <tr>
+        <th>Points</th>
+        <th>Percent of matches decided</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>11.5%</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>29%</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>45.6%</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>60.4%</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>72%</td>
+    </tr>
+</table>
+
+
+<h3>Conclusions</h3>
+
+<ol>
+<li>Don&#8217;t get penalties</li>
+<li>The average robot can&#8217;t accomplish the &#8220;main scoring task&#8221; that many times, so shoot for a simple mechanism that you can train your driver on, especially if you are under resourced.</li>
+<li>Consider the end game. It is often left for last and it is often a significant competitive advantage, especially if you are looking to make it to the big dance on the third pick spot.</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Drivetrain Design and Analysis]]></title>
@@ -27,7 +189,7 @@
     <link href="ewcp.org/blog/2011/11/21/hello-first/"/>
     <updated>2011-11-21T00:00:00-05:00</updated>
     <id>ewcp.org/blog/2011/11/21/hello-first</id>
-    <content type="html"><![CDATA[<p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (11) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
+    <content type="html"><![CDATA[<p>The East West Collaboration Project, better known as The EWCP, was founded in the Summer of 2008 by then students Akash Rastogi (formerly 11, now a mentor on 3929) and Ranjit Chahal (1323) in an attempt to bring teams closer together through the sharing of knowledge, resources and ideas.</p>
 
 <p>Since then, The EWCP has grown to nearly 12 Teams from all over North America and has excelled at nearly every aspect of the FIRST Robotics Competition. Together, the EWCP Mentor team has several decades of experience with the FIRST Robotics Competion.</p>
 
