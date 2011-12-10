@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Average and What It Means To Your Team - EWCP Blog</title>
+  <title>Basic Control Loops - EWCP Blog</title>
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="&#8220;I&#8217;m not looking for the best players, Craig. I&#8217;m looking for the right ones&#8221; - Herb Brookes Your team&#8217;s first meeting &hellip;">
+  <meta name="description" content="Basic Control Loops Moving robot appendages (or whole robots) to a specific set point has traditionally been a black art. Three letter acronyms like &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="ewcp.org/blog/2011/12/08/average-and-what-it-means-to-your-team">
+  <link rel="canonical" href="ewcp.org/calculators/controls/control-loops">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -85,107 +85,18 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Average and What It Means to Your Team</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-08T00:48:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2011</time>
-        
-      </p>
+    <h1 class="entry-title">Basic Control Loops</h1>
     
   </header>
-
-
-<div class="entry-content"><p><em>&#8220;I&#8217;m not looking for the best players, Craig. I&#8217;m looking for the right ones&#8221; - Herb Brookes</em></p>
-
-<p>Your team&#8217;s first meeting after kickoff is the most important meeting you will have all year. You have been presented a problem with an infinite set of solutions, and you&#8217;ve only got six weeks to pick one and build it! We think a major reason teams often build less than stellar robots is that they aim too high. By trying to design a robot that can do everything, they often don&#8217;t have time to refine any of it, and ultimately build a product that just doesn&#8217;t perform. By showing that the average robot doesnt score as many points as you might think, we hope teams will consider simpler mechanisms they can thoroughly debug and test, resulting in better on field performance. To do this, we took data from the @FRCFMS twitter feed. We analyzed 3615 qualification matches from 2010 and 4756 qualifying matches from 2011. The following is what we learned.</p>
-
-<ul>
-<li><strong>Teams have a hard time scoring.</strong>
-
-<ul>
-<li>In 2010 and 2011 approximately 20% of alliances scored 0 points after penalties.</li>
-<li>In 2010 the average robot scored 1.4 points per match. That&#8217;s 3 balls every 2 matches, or 2 hangs every 3 matches.</li>
-<li>In 2011 the average robot scored 11.3 points per match. To put that in perspective, that is the equivalent of launching a first place minibot roughly 2 out of 5 matches or, since many events are 10 matches, 4 first place minibot finishes all event.</li>
-</ul>
-</li>
-<li><strong> The end game is important and teams often undervalue it.</strong>
-
-<ul>
-<li>In 2010 a robot hung in roughly 30% of the matches. The 2 points from hanging would have changed the outcome of the match in 30% of matches.</li>
-<li>In 2011 at least one minibot scored in 67% of matches. Both alliances scored a minibot in 23.3% of matches. It is telling that the average alliance score with minibots was 34.5 but without them was 20.4.</li>
-</ul>
-</li>
-<li><strong> Avoid penalties like the plague</strong>
-
-<ul>
-<li>Low scoring alliances are penalized more frequently than higher scoring alliances.</li>
-<li>In 2010, penalties cost an alliance a win 6% of the time, and turned a win into a tie 10.8% of the time.</li>
-<li>In 2011, penalties cost an alliance a win 5.1% of the time, and turned a win into a tie 7.6% of the time.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
+  <p>Moving robot appendages (or whole robots) to a specific set point has traditionally been a black art. Three letter acronyms like PID and fancy words like linearization are thrown around but somehow your arm only seems to have two positions, where you don&#8217;t want it to be and against the hard stop.</p>
 
-<span class="byline author vcard">Posted by <span class="fn">Ian Curtis</span></span>
-
-      
-
-
-
-
-
-
-
+<p>The most basic way of controlling a system is to provide power for a certain amount of time and then stop it. Either a human can do this or the program can regulate the time. Frequently, this is how driving in auton is done. Teams say &#8221;<em>Go forward for 3 seconds</em>&#8221; and it works acceptably for a lot of cases. However, when you try doing that for arms you run into problems. Arms have drastically differing loads and batteries often have different charge levels. This can cause the arm to either under or overshoot and just generally not be precise. With a drivetrain, if your wheels are within 10 degrees of where they need to be you are probably close enough. With an arm, if you are within 10 degrees of your target there is a good chance you are off by over a foot or more.</p>
 
   
-
-
-<time datetime="2011-12-08T00:48:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2011</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="ewcp.org/blog/2011/12/08/average-and-what-it-means-to-your-team/" data-via="" data-counturl="ewcp.org/blog/2011/12/08/average-and-what-it-means-to-your-team/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2011/12/06/2010-scoring-analysis/" title="Previous Post: 2010 Scoring Analysis">&laquo; 2010 Scoring Analysis</a>
-      
-      
-    </p>
-  </footer>
 </article>
 
 </div>
