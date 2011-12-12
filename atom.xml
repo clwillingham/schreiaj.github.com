@@ -4,7 +4,7 @@
   <title><![CDATA[EWCP Blog]]></title>
   <link href="ewcp.org/atom.xml" rel="self"/>
   <link href="ewcp.org/"/>
-  <updated>2011-12-09T23:18:56-05:00</updated>
+  <updated>2011-12-11T20:18:06-05:00</updated>
   <id>ewcp.org/</id>
   <author>
     <name><![CDATA[EWCP]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[EWCPcast Build 2012]]></title>
+    <link href="ewcp.org/blog/2011/12/11/ewcpcast-build-2012/"/>
+    <updated>2011-12-11T20:17:00-05:00</updated>
+    <id>ewcp.org/blog/2011/12/11/ewcpcast-build-2012</id>
+    <content type="html"><![CDATA[<p>The 2012 build and competition season is nearly upon us and the EWCP hopes to make it a little easier for everyone.
+Tenatively, we&#8217;re planning on doing the following casts:</p>
+
+<ul>
+<li><p>&#8216;Twas the night before kick-off&#8217;, scheduled for 1/5/12. We&#8217;ll be discussing subjects like brainstorming, game analysis, strategic design and more.</p></li>
+<li><p>Post Kick-off cast, sheduled for 1/8/12. We&#8217;ll be talking about information gathered from some of our EWCP members in reference to the new game. This discussion will be somewhat general as to not influence teams who are still brainstorming.</p></li>
+<li><p>Weekly Build Casts, Scheduled for each Sunday During the build season. Each cast will focus on where you should be in the build stage, any new updates that may change the game, etc.</p></li>
+<li><p>Weekly Competition Season Casts: Predictions, Recaps, Updates, Tips and Trick</p></li>
+</ul>
+
+
+<p>As always, our casts will be hosted via talkshoe at 9pm EST.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Average and What It Means To Your Team]]></title>
