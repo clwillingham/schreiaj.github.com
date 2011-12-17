@@ -1,0 +1,65 @@
+{
+   "CIM":{
+      "free_speed":5210,
+      "stall_torque":2.43,
+      "stall_current":133,
+      "free_current":2.7,
+      "spec_voltage":12.00
+   },
+
+   "Window RH":{
+      "free_speed":84,
+      "stall_torque":10.6,
+      "stall_current":18.6,
+      "free_current":1.8,
+      "spec_voltage":12.00
+   },
+
+   "Window LH":{
+      "free_speed":84,
+      "stall_torque":10.6,
+      "stall_current":18.6,
+      "free_current":1.8,
+      "spec_voltage":12.00
+   },
+
+    "FP 2011":{
+      "free_speed":20770,
+      "stall_torque":0.5324,
+      "stall_current":108.7,
+      "free_current":0.82,
+      "spec_voltage":12.00
+   },   
+
+   "RS 775 (18V)":{
+      "free_speed":19500,
+      "stall_torque":1.175,
+      "stall_current":130,
+      "free_current":2.7,
+      "spec_voltage":18.00
+   },
+
+   "RS-550":{
+      "free_speed":19300,
+      "stall_torque":0.4862,
+      "stall_current":85,
+      "free_current":1.4,
+      "spec_voltage":12.00
+   },
+
+   "RS-540":{
+      "free_speed":16800,
+      "stall_torque":0.4862,
+      "stall_current":85,
+      "free_current":1.4,
+      "spec_voltage":12.00
+   },
+
+   "RS-395":{
+      "free_speed":15500,
+      "stall_torque":0.1176,
+      "stall_current":15,
+      "free_current":0.5,
+      "spec_voltage":12.00
+   }
+}

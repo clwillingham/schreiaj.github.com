@@ -9,7 +9,7 @@
   <meta name="author" content="EWCP">
 
   
-  <meta name="description" content="Single Speed Drive Train function initialize () { var element = document.getElementById("singlespeed"); tangle = new Tangle(element, { initialize: &hellip;">
+  <meta name="description" content="Single Speed Drive Train function loadMotorSpecs() { $.ajax({ url: "/calculators/motors_2011.json", dataType: "json", crossDomain: true, success: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -115,7 +115,37 @@
 
 <script type="text/javascript">
 
+        function loadMotorSpecs()
+        {
+            $.ajax({
+                    url: "/calculators/motors_2011.json",
+                    dataType: "json",
+                    crossDomain: true,
+                    success: function( data ) {
+                        motors = data;
+
+                        setMotors('CIM')
+                        var items = [];
+
+                          $.each(data, function(key, val) {
+                            items.push('<li><a href="Javascript:setMotors(\''+key+'\');">' + key + '</a></li>');
+                          });
+
+                          $('<ul/>', {
+                            'class': 'preset-list',
+                            html: items.join('')
+                          }).appendTo('#presets');
+                    },
+                    error: function () {
+                        console.log("There was an error loading the motor presets.")
+                    }
+            });            
+        }
+
         function initialize () {
+
+            $('#presets').hide();
+            loadMotorSpecs()
 
             var element = document.getElementById("singlespeed");
 
@@ -190,10 +220,25 @@
                 }
             });
         }
+
+        function setMotors(motor)
+        {
+            tangle.setValue('spec_voltage',motors[motor].spec_voltage);
+            tangle.setValue('free_speed',motors[motor].free_speed);
+            tangle.setValue('stall_torque',motors[motor].stall_torque);
+            tangle.setValue('free_current',motors[motor].free_current);
+            tangle.setValue('stall_current',motors[motor].stall_current);
+        }
 </script>
 
 
 <div id="singlespeed">
+
+<a href="Javascript:$('#presets').toggle()"> Presets </a>
+<div id="presets">
+</div>
+<hr/>
+
 I have a <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> motor specified to run at  <span data-var="free_speed" class="TKAdjustableNumber" data-min="1" data-max="20000" data-step="50"> revolutions per minute </span>, with a stall torque of <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span> and a stall current of <span data-var="stall_current" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> amps</span>. The no load current is <span data-var="free_current" class="TKAdjustableNumber" data-min="0" data-max="50" data-format="%.2f" data-step=".1"> amps</span>. I am applying <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> to the motor.
 
 <br />
