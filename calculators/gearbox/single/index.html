@@ -57,7 +57,7 @@
 
 </head>
 
-<body    onload="initialize()">
+<body   class="no-sidebar"   onload="initialize()">
   <header role="banner"><hgroup>
   <a href="/"><h1>EWCP Blog</h1></a>
   
@@ -79,6 +79,7 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/calculators"> Tools </a></li>
 </ul>
 
 </nav>
@@ -192,18 +193,6 @@
 </script>
 
 
-<p><span class="no_print"></p>
-
-<h2>How to use:</h2>
-
-<p>Read the document, it should explain how a single speed drive train works. If you would like to see what effect parameters of the motor or your transmission have on the output you can simply click and drag any of the blue numbers to adjust them. Enjoy!</p>
-
-<p>Special thanks to John Vielkind-Neun for the spreadsheet from which this is drawn, without him a lot of us would still be confused by this. Also, Chris Picone for his skills at technical writing without which this would be significantly harder to read.
-</span></p>
-
-<hr />
-
-
 <div id="singlespeed">
 I have a <span data-var="spec_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> motor specified to run at  <span data-var="free_speed" class="TKAdjustableNumber" data-min="1" data-max="20000" data-step="50"> revolutions per minute </span>, with a stall torque of <span data-var="stall_torque" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".01"> Newton-meters</span> and a stall current of <span data-var="stall_current" class="TKAdjustableNumber" data-min="0" data-max="300" data-format="%.0f" data-step="1"> amps</span>. The no load current is <span data-var="free_current" class="TKAdjustableNumber" data-min="0" data-max="50" data-format="%.2f" data-step=".1"> amps</span>. I am applying <span data-var="applied_voltage" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="%.2f" data-step=".1"> volts</span> to the motor.
 
@@ -272,43 +261,6 @@ If it were to drive into a wall the motors would have a load of <span data-var="
 </article>
 
 </div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2011/12/11/ewcpcast-build-2012/">EWCPcast Build 2012</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/08/average-and-what-it-means-to-your-team/">Average and What It Means To Your Team</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/06/2010-scoring-analysis/">2010 Scoring Analysis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/11/28/drivetrain-design-and-analysis/">Drivetrain Design and Analysis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/11/21/hello-first/">Hello FIRST</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
 
 
     </div>
